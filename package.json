@@ -1,0 +1,30 @@
+{
+  "name": "template-engine",
+  "version": "1.0.0",
+  "description": "OOP and testings for week 10 homwwork ",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimnana45/-template-engine.git"
+  },
+  "author": "Kim Le",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kimnana45/-template-engine/issues"
+  },
+  "homepage": "https://github.com/kimnana45/-template-engine#readme",
+  "dependencies": {
+    "inquirer": "^7.1.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
+}
