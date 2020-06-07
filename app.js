@@ -17,13 +17,11 @@ const render = require("./lib/htmlRenderer");
 let employeeId = [];
 let employees = [];
 
-// init();
-
 async function init(){
     try {
         const buildManager = await inquirer.prompt(ManagerQ);
         employeeId.push(buildManager.managerID);
-        const manager =  new Manager(buildManager.managerName, buildManager.managerID, buildManager.managerEmail, buildManager.managerNumer);
+        const manager =  new Manager(buildManager.managerName, buildManager.managerID, buildManager.managerEmail, buildManager.managerNumber);
         employees.push(manager);
 
         if (buildManager.addMember === 'Engineer') {
@@ -65,7 +63,7 @@ async function buildIntern(){
     try {
         const addIntern = await inquirer.prompt(InternQ);
         employeeId.push(addIntern.internID);
-        const intern = new Intern(addIntern.internName, addIntern.InternID, addIntern.internEmail, addIntern.internSchool);
+        const intern = new Intern(addIntern.internName, addIntern.internID, addIntern.internEmail, addIntern.internSchool);
         employees.push(intern);
 
         if (addIntern.addMember === 'Engineer') {
